@@ -209,8 +209,8 @@ let CheckMimeMapping (filePath: string) =
 metadata.MimeType <- "application/vnd.google-apps.document"
 ```
 
-OCR の言語設定 (ISO 639-1 code)。
-日本語の設定で英字も扱えるようです。
+OCR で認識する言語を指す値 (ISO 639-1 code) を設定する。
+日本語を選択すれば英字も扱えるようです。
 
 ```fsharp
 copyRequest.OcrLanguage <- "ja"
