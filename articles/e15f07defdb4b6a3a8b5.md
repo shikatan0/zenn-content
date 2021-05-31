@@ -209,7 +209,7 @@ let CheckMimeMapping (filePath: string) =
 metadata.MimeType <- "application/vnd.google-apps.document"
 ```
 
-OCR で認識する言語を指す値 (ISO 639-1 code) を設定する。
+OCR で認識する言語 (ISO 639-1 code) を設定する。
 日本語を選択すれば英字も扱えるようです。
 
 ```fsharp
