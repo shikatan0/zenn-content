@@ -2,7 +2,7 @@
 title: "F# - Google Drive API で OCR"
 emoji: "📑"
 type: "tech"
-topics: ["dotnet", "fsharp", "googledrive"]
+topics: ["dotnet", "fsharp", "googledrive", "OCR"]
 published: true
 ---
 
@@ -249,6 +249,6 @@ let rec ReadStructuralElements (elements: System.Collections.Generic.IList<Googl
 
 # 関連記事
 
-- [.NET 5, F# - Windows.Media.Ocrを使う [↗]](https://zenn.dev/shikatan/articles/451245de0f5dd70d28be)
+- [.NET 5, F# - Windows.Media.Ocr を使う [↗]](https://zenn.dev/shikatan/articles/451245de0f5dd70d28be)
 
 # end
