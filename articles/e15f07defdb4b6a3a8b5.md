@@ -8,7 +8,9 @@ published: true
 
 # 前提
 
-- Google Drive には PDF や画像ファイルをドキュメントに変換する OCR 機能があります [[↗]](https://support.google.com/drive/answer/176692)。
+- Google Drive には PDF や画像ファイルをドキュメントに変換する OCR 機能があります[^1]。
+
+[^1]: https://support.google.com/drive/answer/176692
 
 # 事前準備
 
@@ -30,7 +32,7 @@ dotnet new console -lang "F#" -o 場所\プロジェクト名
 
 ## ライブラリを追加する
 
-Visual Studio Code で作成したプロジェクトを開き、ターミナル (Ctrl + `) で下記のコマンドを実行。
+作成したプロジェクトを Visual Studio Code で開き、ターミナル (Ctrl + `) で下記のコマンドを実行する。
 
 ```powershell
 dotnet add package Google.Apis.Drive.v3
