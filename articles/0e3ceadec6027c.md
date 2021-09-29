@@ -117,38 +117,16 @@ type JsonX = {ary: array<int>}
 
 # プロパティ名の制御
 
-`JsonPropertyName` 属性で設定を行うので `member` を使います。
-方法としては object を class で表すのが簡潔だと思います。
-
-```fsharp:型 (1)
-type JsonX (xN) =
-    [<System.Text.Json.Serialization.JsonPropertyName("x-n")>]
-    member _.XN: int = xN
+```fsharp:型
+type JsonX = {[<System.Text.Json.Serialization.JsonPropertyName("x-n")>] XN: int}
 ```
 
-```fsharp:コレクション (1)
-JsonX(30)
+```fsharp:コレクション
+{ XN = 30 }
 ```
 
-```json:JSON (1)
+```json:JSON
 {"x-n":30}
-```
-
-```fsharp:型 (2)
-type JsonXObj (xN) =
-    [<System.Text.Json.Serialization.JsonPropertyName("x-n")>]
-    member _.XN: int = xN
-type JsonX (xObj) =
-    [<System.Text.Json.Serialization.JsonPropertyName("x-obj")>]
-    member _.XObj: JsonXObj = xObj
-```
-
-```fsharp:コレクション (2)
-JsonX(JsonXObj(40))
-```
-
-```json:JSON (2)
-{"x-obj":{"x-n":40}}
 ```
 
 # end
