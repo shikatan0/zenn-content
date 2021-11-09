@@ -9,14 +9,14 @@ published: true
 # System.Text.Json
 
 .NET で JSON を扱うための標準ライブラリです。
-JSON 文字列と .NET のコレクション型の相互変換を行う仕組みを含みます。
+JSON 文字列と .NET のコレクション型の相互変換を行う仕組みを提供します。
 
 > https://docs.microsoft.com/ja-jp/dotnet/api/system.text.json
 
 # この記事の目的
 
-System.Text.Json を C# で使用する方法は[公式のページ](https://docs.microsoft.com/ja-jp/dotnet/standard/serialization/system-text-json-how-to)など充実しています。
-この記事は、それらの情報を F# に利用するための補足記事となるように意識しています。
+System.Text.Json を C# から使用する方法は[公式のページ](https://docs.microsoft.com/ja-jp/dotnet/standard/serialization/system-text-json-how-to)など充実しています。
+この記事は、それらの情報を F# に利用するための補足となるように意識しています。
 
 # この記事の構成
 
@@ -26,8 +26,12 @@ System.Text.Json を C# で使用する方法は[公式のページ](https
 
 # コレクション型
 
-System.Text.Json は標準だと F# 特有のコレクション型に対応していません[^1]。
-特別な理由がなければ下記の .NET と共通の型を使用すると楽に使えます。
+F# 6 (.NET 6) にて対応しました🎉[^2]。
+
+[^2]: https://devblogs.microsoft.com/dotnet/whats-new-in-fsharp-6/#system-text-json-support-for-common-f-types
+
+~~System.Text.Json は標準だと F# 特有のコレクション型に対応していません[^1]。
+特別な理由がなければ下記の .NET と共通の型を使用するのが良さそうです。~~
 
 [^1]: https://docs.microsoft.com/ja-jp/dotnet/standard/serialization/system-text-json-supported-collection-types
 
