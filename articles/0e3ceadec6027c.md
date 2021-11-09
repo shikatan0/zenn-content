@@ -1,5 +1,5 @@
 ---
-title: "【F#】System.Text.Json 基礎"
+title: "【.NET5, F#】System.Text.Json 基礎"
 emoji: "📄"
 type: "tech"
 topics: [fsharp, json]
