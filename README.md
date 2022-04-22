@@ -1,3 +1,3 @@
 # zenn-content
 
-[My articles page](https://zenn.dev/shikatan).
+https://zenn.dev/shikatan
