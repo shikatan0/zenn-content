@@ -28,9 +28,7 @@ Get-Content "$PSScriptRoot/list"
   if (!$input.MoveNext()) {
     exit
   }
-  else {
-    $input.Reset()
-  }
+  $input.Reset()
   npm install --global $input
 }
 ```
@@ -63,10 +61,9 @@ npm outdated --global --json
   if (!$input.MoveNext()) {
     exit
   }
-  else {
-    $input.Reset()
-  }
+  $input.Reset()
   npm uninstall --global $input
+  $input.Reset()
   npm install --global $input
 }
 ```
