@@ -1,7 +1,8 @@
 import $ from 'dax-sh'
 import * as fs from 'node:fs'
 import * as path from 'node:path'
-;(async () => {
+
+const newArticle = async () => {
 	const line = (await $`npx zenn new:article`.lines()).pop()
 	if (line === undefined) {
 		return
@@ -15,4 +16,6 @@ import * as path from 'node:path'
 		path.join('.', 'articles', `${slug}.md`),
 		path.join('.', 'src', 'articles', `${slug}.mdx`),
 	)
-})()
+}
+
+newArticle()
